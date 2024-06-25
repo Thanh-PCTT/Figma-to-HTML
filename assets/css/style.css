@@ -138,8 +138,8 @@ a{
     height: 685px;
     object-fit: cover;
     border-radius: 20px;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+    /* -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); */
 }
 
 .hero .hero-summary{
@@ -281,4 +281,22 @@ a{
 .hero .stats strong:nth-child(2){
     margin-left: 28px;
 }
+    
 
+
+.hero .media-block .img {
+    transition: transform 1s, filter 2s ease-in-out;
+    -webkit-transform: scale(-1,1);
+    transform: scale(-1,1);
+  }
+  
+  /* The Transformation */
+.hero .media-block:hover .img {
+    -webkit-transform: scale(-1.1,1.1);
+     transform: scale(-1.1,1.1);
+   
+    }
+
+    .hero-summary{
+        cursor: pointer;
+    }
